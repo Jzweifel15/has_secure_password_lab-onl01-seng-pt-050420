@@ -10,7 +10,7 @@ class UsersController < ApplicationController
       session[:user_id] = @user.id 
       redirect_to user_path(@user)
     else 
-      redirect_to new_user_path, alert: "Must have a valid username and password."
+      redirect_to new_user_path, alert: "Must have a valid username and/or password."
     end
   end 
   
